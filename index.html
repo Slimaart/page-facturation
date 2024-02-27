@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Facturation.css">
+    <title>Onglet moulaaaa</title>
+</head>
+<body> 
+    <header> <!-- Navigation entre les pages -->
+        <a onclick="window.location.reload()">
+            <div class="logo"><img src="image/logo-lbp-header.png" alt="LeBonPlan"></div>
+            <div class="titre-header">Facturation</div></a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Apropos.html">A propos</a></li>
+                    <li><a href="Inscription.html">Inscription</a></li>
+                    <li><a href="Connexion.html">Connexion</a></li>
+                    <li><a href="Facturation.html">Module de Facturation</a></li>
+                    <li><a href="Avis.html">Avis</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+    <article>
+        <h1>Module de facturation</h1>
+        <p>Cette page vous permet de nous soumettre vos informations de facturation.</p>
+    </article>
+    <nav> <!-- Navigation dans la page -->
+        <ul class="baton" id="baton">
+            <li><a href="#baton">Informations</a></li>
+            <li>|</li>
+            <li><a href="#faq-part">F.A.Q.</a></li>
+            <li>|</li>
+            <li><a href="Contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
+    <section id="formulaire-section"> <!-- première partie principale de la page -->
+        <h1>Informations de facturation</h1>
+		<div class="formulaire-form">
+            <!-- method post : pour que les informations n'apparaissent pas dans l'url -->
+			<form id="form" action="Facturation.php" method="post" class="post"> 
+                <label><strong>Fournisseur</strong></label>
+                <select class="fournisseur" id="fournisseur" name="Fournisseur"> <!-- liste déroulante -->
+                    <option value="fournisseur1">Choisissez votre fournisseur</option>
+                    <option value="fournisseur1">fournisseur1</option>
+                    <option value="fournisseur2">fournisseur2</option>
+                    <option value="fournisseur3">fournisseur3</option>
+                    <option value="fournisseur4">fournisseur4</option>
+                    <option value="fournisseur5">fournisseur5</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <input type="text" id="autreFournisseur" name="autreFournisseur" placeholder="Précisez le fournisseur" style="display:none;">
+                <div class="container"> <!-- formulaires contenus dans des fielsets -->   
+                    <fieldset class="fieldset">
+                        <legend><strong>Entreprise</strong></legend>
+                        <label>Société*</label><br>
+                        <input type="text" placeholder="Société" name="Societe" required><br>
+
+                        <label>N° TVA*</label><br>
+                        <input type="text" id="TVA" placeholder="N° TVA" name="TVA" maxlength="13" required>
+                        <span class="error-message" id="ErrorTVA">Veuillez entrer FR suivit de 11 chiffres</span><br>
+
+                        <label>Adresse*</label><br>
+                        <input type="text" placeholder="Adresse" name="Adresse" required><br>
+
+                        <label>Code postal*</label><br>
+                        <input type="text" id="inputCP" placeholder="Entrez le code postal" name="Code_postal" maxlength="5" required>
+                        <span class="error-message" id="ErrorCP">Veuillez entrer 5 chiffres</span><br>
+
+                        <label>Ville*</label><br>
+                        <select id="inputCo" name="Ville" required></select><br>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend><strong>Représentant</strong></legend>
+
+                        <label>Sexe</label><br>
+                        <div class="radio">
+                            <input type="radio" id="Homme" class="sexe" name="sexe" value="Homme" checked>
+                            <label for="Homme">Homme</label>
+
+                            <input type="radio" id="Femme" class="sexe" name="sexe" value="Femme">
+                            <label for="Femme">Femme</label>
+
+                            <input type="radio" id="autre" class="sexe" name="sexe" value="autre">
+                            <label for="autre">Non spécifié</label>
+                        </div>
+
+                        <label>Nom*</label><br>
+                        <input type="text" id="Nom" placeholder="Nom" name="Nom" required><br>
+
+                        <label>Prénom*</label><br>
+                        <input type="text" placeholder="Prénom" name="Prenom" required><br>
+
+                        <label>Courriel*</label><br>
+                        <input type="Email" placeholder="Courriel" name="Courriel" required><br>
+
+                        <label>Téléphone</label><br>
+                        <input type="text" class="input" id="Tel" placeholder="Téléphone" name="Telephone" maxlength="10">
+                        <span class="error-message" id="ErrorTel">Veuillez entrer 10 chiffres</span>
+                    </fieldset>
+                </div>
+                <label class="com">Commentaires</label><br>
+                <textarea name="commentaires" placeholder="Commentaires" rows="5" maxlength="2000"></textarea>
+                <p>* Champs obligatoires</p>
+                <!-- boutons -->
+                <button type="reset">Réinitialiser</button>
+                <button class="submit" id="submit">Envoyer</button>
+                <button id="scroll-top-button" style="display: none;">↑</button>
+			</form>
+		</div>
+	</section>
+    <section id="faq-part"> <!-- deuxième partie principale de la page -->
+        <hr>
+        <h1>Questions fréquentes</h1>
+            <ul>
+                <h2>Mon fournisseur n'apparaît pas dans la liste déroulante, comment faire ?</h2>
+                <p>Sélectionnez "Autre" dans la liste déroulante puis indiquez-nous le nom de votre fournisseur dans le champ "Commentaires".</p>
+                <h2>Quel est le délai de réponse ?</h2>
+                <p>Nos équipes traitent votre demande au plus vite. Vous obtiendrez généralement une réponse sous 48h (jours ouvrés)</p>
+                <h2>J'ai une question, comment vous contacter ?</h2>
+                <p>Vous pouvez utilisez notre <a href="Contact.html">formulaire de contact</a> ou nous envoyer directement un mail à <a href="mailto:info@mycompany.com">info@mycompany.com</a>.<p>
+            </ul>
+    </section>
+
+    <!-- lien au fichier javascript -->
+    <script src="Facturation.js"></script>
+</body>
+</html>

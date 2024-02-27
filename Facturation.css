@@ -1,0 +1,465 @@
+/*body*/
+/*header*/
+
+header .titre-header {
+	font-family: 'Lato', sans-serif;
+	color: #ffffff;
+	height: 50px;
+	line-height: 70px;
+	font-size: 30px;
+	float: left;
+	width: auto;
+	margin-left: 20px;
+    margin-top: 7px;
+	font-weight: normal;
+}
+
+header .titre-header:hover {
+	cursor: pointer;
+}
+
+header .logo img {
+	width: 200px;
+	height: 70px;
+	margin-left: -15px;
+	float: left;
+}
+
+header .logo img:hover {
+	cursor: pointer;
+}
+
+header {
+	font-family: 'Lato', sans-serif !important;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 50px;
+	background: #262626;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*fin header*/
+/**********************************************************************************************************************/
+/*nav header*/
+
+header nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+header nav li {
+	display: inline-block;
+	margin-left: 20px;
+	padding-top: 25px;
+}
+
+header nav ul li a:hover {
+	text-decoration: underline;
+	color: rgb(244, 102, 27) !important;
+	transition: 300ms;
+	font-size: 17px;
+}
+
+header nav li a {
+	display: block;
+}
+
+/*fin nav header*/
+/**********************************************************************************************************************/
+/*nav body*/
+
+article {
+    margin-top: 120px;
+}
+
+body nav {
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+body nav ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;    
+}
+
+body nav ul li, body nav ul p {
+    margin: 0 10px; 
+}
+
+body nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+body nav ul li a:hover {
+	text-decoration: underline;
+	color: white;
+	transition: 300ms;
+	font-size: 17px;
+}
+
+.baton li {
+	color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+/*fin nav body*/
+/**********************************************************************************************************************/
+/*form*/
+
+.post label{
+    color:rgb(244, 102, 27);
+	margin-left: 10px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.fournisseur {
+	margin-bottom: 20px;
+}
+
+input[type="radio"] {
+	background-color: white;
+	accent-color: rgb(244, 102, 27);
+} 
+
+.radio label{
+    color: black;
+	font-size: 15px;
+	margin-left: 0px;
+} 
+
+h1 {
+	color: black;
+	font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+h2 {
+	color: black;
+	font-size: 1.2em;
+    margin-bottom: -12px;
+    margin-top : 15px;
+}
+
+p {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 200;
+	color: black;
+}
+
+textarea {
+    resize: vertical;
+    width: 35%;
+	height: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldset {
+	width: 48%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+input {
+	text-align: justify;
+}
+
+[id^="Error"] {
+	display: none;
+}
+
+fieldset legend {
+	font-size: 25px;
+}
+
+fieldset {
+	color: black;
+}
+
+body {
+	background-color: white;
+}
+
+section {
+	background-color: #f3f3f3;
+	padding: 25px 20px;
+}
+
+.post select {
+	margin-left: 10px;
+}
+
+.post input:not(.sexe), select {
+	border-radius: 5px;
+	border: 1px solid rgba(244, 102, 27, 0.3);
+	background-color: white;
+	margin-left: 10px;
+	width: 200px;
+}
+
+textarea {
+	border-radius: 5px;
+	border: 1px solid rgba(244, 102, 27, 0.3);
+	background-color: white;
+	margin-left: 10px;
+	width: 500px;
+}
+
+.post input:not(.input) {
+	margin-bottom: 15px;
+}
+
+button[type="reset"] {
+	border-radius: 5px;
+	border: 2px solid rgb(244, 102, 27);
+	background-color: rgb(244, 102, 27);
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#submit {
+	border-radius: 5px;
+	border: 2px solid rgb(244, 102, 27);
+	background-color: white;
+	color: rgb(244, 102, 27);
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.container {
+	margin-bottom: 20px;
+}
+
+/*fin form*/
+/**********************************************************************************************************************/
+/*bouton remonter*/
+
+#scroll-top-button {
+	position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: rgb(244, 102, 27);
+    color: white;
+	font-size: x-large;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+	width: 50px;
+	height: 50px;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+/*fin bouton remonter*/
+
+
+/* ======================================= MEDIA QUERIES ================================= */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px)
+{
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px)
+{
+	
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+	header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+		position: absolute;
+    }
+
+    .titre-header {
+        order: 2; 
+    }
+
+    header .navbar {
+        order: 1; 
+    }
+
+    header .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end; 
+		margin: 10px 0px;
+    }
+
+    header .navbar ul li {
+        flex: 100%;
+        padding: 5px 0;
+
+    }
+
+	article {
+		margin-top: 220px;
+	}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+{
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px)
+{
+	.container{ 
+		display: block;
+	}
+
+	.fieldset {
+		width: 96%;
+		border: 1px solid black;
+		padding: 10px;
+	}
+
+	header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+		position: absolute;
+    }
+
+    .titre-header {
+        order: 2; 
+    }
+
+    header .navbar {
+        order: 1; 
+    }
+
+    header .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end; 
+		margin: 10px 0px;
+    }
+
+    header .navbar ul li {
+        flex: 100%;
+        padding: 5px 0;
+
+    }
+
+	article {
+		margin-top: 220px;
+	}
+
+	textarea {
+		width: 96%;
+	}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+	.container{ 
+		display: block;
+		width: 100%;
+	}
+
+	.fieldset {
+		width: 96%;
+		border: 1px solid black;
+		padding: 10px;
+	}
+
+	header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+		position: absolute;
+		width: 100%;
+    }
+
+    header .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header .navbar ul li {
+        flex: 100%;
+        padding: 5px 0;
+    }
+
+	article {
+		margin-top: 220px;
+		width: 100%;
+	}
+
+	textarea {
+		width: 96%;
+	}
+
+	body {
+		width: 100%;
+	}
+
+	.baton li {
+		font-size: 12px;
+	}
+}
